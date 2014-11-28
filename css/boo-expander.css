@@ -1,0 +1,32 @@
+/**
+ * Name: boo-expander.css
+ */
+
+/** General
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #333;
+    margin: 20px auto;
+    line-height: 1.3em;
+    width: 80%;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/** booExpander theme
+================================================== */
+.boo-expander-content {
+  background-color: #eee;
+  padding: 20px;
+  margin: 10px 0; 
+}

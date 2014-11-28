@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>More less</title>
+        <link rel="stylesheet" href="css/boo-expander.css">
+    </head>
+
+    <body>
+        <div class="open-by-default">
+          <div class="boo-expander-content">
+            This block is open by default and has different configuration.
+          </div>
+
+          <a href="#" title="Show more" data-boo-show="more">Show more example 1</a>
+          <a href="#" title="Show less" data-boo-show="less">Show less example 1</a>
+        </div>
+
+        <div class="boo-expander">
+          <div class="boo-expander-content">
+            This block is closed by default.
+          </div>
+
+          <a href="#" title="Show more" data-boo-show="more">Show more example 2</a>
+          <a href="#" title="Show less" data-boo-show="less">Show less example 2</a>
+        </div>
+
+        <div class="boo-expander">
+          <div class="boo-expander-content">
+            This block is closed by default and uses the same class as the example2.
+          </div>
+
+          <a href="#" title="Show more" data-boo-show="more">Show more example 3</a>
+          <a href="#" title="Show less" data-boo-show="less">Show less example 3</a>
+        </div>
+
+
+        <!-- JS libraries -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/booExpander.js"></script>
+        <script>
+        (function() {
+
+            $('.boo-expander').booExpander({
+                speed: 400,
+                state: 0
+            });
+
+            $('.open-by-default').booExpander({
+                speed: 600,
+                state: 1
+            });
+
+        })();
+
+        </script>
+    </body>
+</html>
